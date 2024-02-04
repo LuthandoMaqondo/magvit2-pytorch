@@ -35,7 +35,8 @@ setup(
     'taylor-series-linear-attention>=0.1.5',
     'torch',
     'torchvision',
-    'x-transformers'
+    'x-transformers',
+    'wandb'
   ],
   classifiers=[
     'Development Status :: 4 - Beta',
