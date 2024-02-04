@@ -1,0 +1,36 @@
+{
+    "os": "macOS-14.4-arm64-arm-64bit",
+    "python": "3.11.4",
+    "heartbeatAt": "2024-02-04T12:42:53.993275",
+    "startedAt": "2024-02-04T12:42:47.216380",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/LuthandoMaqondo/magvit2-pytorch.git",
+        "commit": "9f49074179c912736e617d61b32be367eb5f993a"
+    },
+    "email": "luthando957@gmail.com",
+    "root": "/Users/luthandomaqondo/Development/Python/magvit2-pytorch",
+    "host": "Luthandos-MBP",
+    "username": "luthandomaqondo",
+    "executable": "/Users/luthandomaqondo/miniconda3/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "disk": {
+        "/": {
+            "total": 228.27386474609375,
+            "used": 205.10382080078125
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 8.0
+    }
+}
