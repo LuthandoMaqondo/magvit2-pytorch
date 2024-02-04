@@ -2,6 +2,10 @@ from setuptools import setup, find_packages
 
 exec(open('magvit2_pytorch/version.py').read())
 
+def parse_requirements(filename):
+    lines = (line.strip() for line in open(filename))
+    return [line for line in lines if line and not line.startswith('#')]
+
 setup(
   name = 'magvit2-pytorch',
   packages = find_packages(),
@@ -19,25 +23,7 @@ setup(
     'attention mechanisms',
     'generative video model'
   ],
-  install_requires=[
-    'accelerate>=0.24.0',
-    'beartype',
-    'einops>=0.7.0',
-    'ema-pytorch>=0.2.4',
-    'pytorch-warmup',
-    'gateloop-transformer>=0.2.2',
-    'kornia',
-    'opencv-python',
-    'pillow',
-    'pytorch-custom-utils>=0.0.9',
-    'numpy',
-    'vector-quantize-pytorch>=1.11.8',
-    'taylor-series-linear-attention>=0.1.5',
-    'torch',
-    'torchvision',
-    'x-transformers',
-    'wandb'
-  ],
+  install_requires=parse_requirements('requirements.txt'),
   classifiers=[
     'Development Status :: 4 - Beta',
     'Intended Audience :: Developers',
